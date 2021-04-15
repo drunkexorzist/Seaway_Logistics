@@ -12,10 +12,10 @@ $(document).ready(function() {
             contentType: false,
             caches: false,
             processData: false,
-            succes: function(result){
-                alert(result);
+            succes: function(){
+                alert('OK');
             }
-        })
+        });
 
     });
     
