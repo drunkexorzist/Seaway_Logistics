@@ -12,8 +12,8 @@ $(document).ready(function() {
             contentType: false,
             caches: false,
             processData: false,
-            succes: function(){
-                alert('OK');
+            succes: function(result){
+                alert(result);
             }
         });
 
