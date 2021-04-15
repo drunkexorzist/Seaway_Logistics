@@ -40,7 +40,7 @@
             </ul>
             <div class="forms">
                 <div class="forms-conter">
-                    <form action="#">
+                    <form action="php/form_1.php" method="POST">
                         <input type="text" placeholder="г.Владивосток">
                         <img class="forms-conter-arrow_right" src="img/icons/arrow_double.png">
                         <input type="text" placeholder="г.Москва">
@@ -51,7 +51,7 @@
                     </form>
                 </div>
                 <div class="forms-conter-cruz">
-                    <form action="#">
+                    <form action="php/form_2.php" method="POST">
                         <input type="text" placeholder="г.Владивосток">
                         <img class="forms-conter-cruz-arrow_right" src="img/icons/arrow_double.png">
                         <input type="text" placeholder="г.Москва">
