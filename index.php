@@ -41,23 +41,23 @@
             <div class="forms">
                 <div class="forms-conter">
                     <form action="php/form_1.php" method="POST">
-                        <input type="text" placeholder="г.Владивосток">
+                        <input type="text" name="city_1" placeholder="г.Владивосток">
                         <img class="forms-conter-arrow_right" src="img/icons/arrow_double.png">
-                        <input type="text" placeholder="г.Москва">
+                        <input type="text" name="city_2" placeholder="г.Москва">
                         <br>
-                        <input type="text" placeholder="Тип контейнера">
+                        <input type="text" name="cont_type" placeholder="Тип контейнера">
                         <br>
                         <button type="submit">Расчитать и заказать</button>
                     </form>
                 </div>
                 <div class="forms-conter-cruz">
                     <form action="php/form_2.php" method="POST">
-                        <input type="text" placeholder="г.Владивосток">
+                        <input type="text" name="city_gruz_1" placeholder="г.Владивосток">
                         <img class="forms-conter-cruz-arrow_right" src="img/icons/arrow_double.png">
-                        <input type="text" placeholder="г.Москва">
+                        <input type="text" name="city_gruz_2" placeholder="г.Москва">
                         <br>
-                        <input type="text" placeholder="Объем, куб. м">
-                        <input type="text" placeholder="Вес, кг">
+                        <input type="text" name="V_gruz" placeholder="Объем, куб. м">
+                        <input type="text" name="M_gruz" placeholder="Вес, кг">
                         <br>
                         <button type="submit">Расчитать и заказать</button>
                     </form>
