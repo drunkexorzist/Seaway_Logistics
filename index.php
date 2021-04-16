@@ -82,7 +82,16 @@
         </div>
     </div>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="script/forms.js"></script>
+    <script>
+        var button = document.getElementById('btn');
+        var button1 = document.getElementById('btn2');
+        button.addEventListener('click', function(){
+            swal("Первая кнопка нажата", "Ураааааааааа")
+        });
+        button1.addEventListener('click', function(){
+            swal("Вторая кнока нажата", "Ураааааааааа еще раз")
+        });
+    </script>
     <script src="script/script_calc.js"></script>
     
     
