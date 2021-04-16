@@ -42,14 +42,14 @@
             </ul>
             <div class="forms">
                 <div class="forms-conter">
-                    <form action="#" >
+                    <form action="#" id="form1">
                         <input type="text" name="city_1" placeholder="г.Владивосток">
                         <img class="forms-conter-arrow_right" src="img/icons/arrow_double.png">
                         <input type="text" name="city_2" placeholder="г.Москва">
                         <br>
-                        <input type="text" name="cont_type" placeholder="Тип контейнера">
+                        <input type="number" name="cont_type" placeholder="Тип контейнера">
                         <br>
-                        <button id="btn" type="button" >Расчитать и заказать</button>
+                        <button id="btn" type="submit" >Расчитать и заказать</button>
                     </form>
                 </div>
                 <div class="forms-conter-cruz">
@@ -81,6 +81,34 @@
         </div>
         </div>
     </div>
+    <script>
+
+        const form1 = document.getElementById('form1');
+
+        function retrieveFormValue(event){
+
+            event.preventDefault();
+
+            const name = form1.querySelector('[name="name"]'),
+                city_out = form1.querySelector('[name="city_1"]'),
+                city_in = form1.querySelector('[name="city_2"]'),
+                cont = form1.querySelector('[name="cont_type"]');
+
+            const values = {
+                name: name.value,
+                city_out: city_out.value,
+                city_in: city_in.value,
+                cont: cont.value
+            };
+
+            console.log(values);
+
+        }
+
+        form1.addEventListener('submit', retrieveFormValue);
+       
+
+    </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         var button = document.getElementById('btn');
