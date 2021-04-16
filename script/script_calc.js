@@ -1,3 +1,4 @@
+//хуй пизда залупа
 const links = document.querySelectorAll(".item-link");
 style_count = document.querySelector(".forms-conter");
 style_count_cruz = document.querySelector(".forms-conter-cruz");
