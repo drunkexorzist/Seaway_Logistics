@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="script/jquery.js"></script>
-    <script type="text/javascript" src="script/forms.js"></script>
+    
+    
+    <!--<script type="text/javascript" src="script/jquery.js"></script>
+    <script type="text/javascript" src="script/forms.js"></script>-->
 </head>
 
 <body>
@@ -40,14 +42,14 @@
             </ul>
             <div class="forms">
                 <div class="forms-conter">
-                    <form action="php/form_1.php" method="POST">
+                    <form action="#" >
                         <input type="text" name="city_1" placeholder="г.Владивосток">
                         <img class="forms-conter-arrow_right" src="img/icons/arrow_double.png">
                         <input type="text" name="city_2" placeholder="г.Москва">
                         <br>
                         <input type="text" name="cont_type" placeholder="Тип контейнера">
                         <br>
-                        <button type="submit">Расчитать и заказать</button>
+                        <button id="btn" type="button" >Расчитать и заказать</button>
                     </form>
                 </div>
                 <div class="forms-conter-cruz">
@@ -59,7 +61,7 @@
                         <input type="text" name="V_gruz" placeholder="Объем, куб. м">
                         <input type="text" name="M_gruz" placeholder="Вес, кг">
                         <br>
-                        <button type="submit">Расчитать и заказать</button>
+                        <button id="btn2" type="button">Расчитать и заказать</button>
                     </form>
                 </div>
             </div>
@@ -79,7 +81,11 @@
         </div>
         </div>
     </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script/forms.js"></script>
     <script src="script/script_calc.js"></script>
+    
+    
 </section>
 <section id="services" class="services">
     <div class="uslugi"></div>
@@ -198,5 +204,6 @@
         </div>
     </div>
 </section>
+
 </body>
 </html>
