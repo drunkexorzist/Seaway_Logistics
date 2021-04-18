@@ -55,6 +55,15 @@
                         <input type="number" name="cont_type" placeholder="Тип контейнера">
                         <br>
                         <button id="btn" type="submit" >Расчитать и заказать</button>
+                        <?php
+			                if ($_SESSION['message']){
+			                	echo '<p style="color: $brown;
+                                font-weight: 300;
+                                text-align: center;
+                                font-size: 18px;">', $_SESSION['message'] , '</p>';
+			                }
+			                unset($_SESSION['message'])
+		                ?>
                     </form>
                 </div>
                 <div class="forms-conter-cruz">
@@ -67,6 +76,16 @@
                         <input type="text" name="M_gruz" placeholder="Вес, кг">
                         <br>
                         <button id="btn2" type="submit">Расчитать и заказать</button>
+                        
+                        <?php
+			                if ($_SESSION['message']){
+			                	echo '<p style="color: $brown;
+                                font-weight: 300;
+                                text-align: center;
+                                font-size: 18px;">', $_SESSION['message'] , '</p>';
+			                }
+			                unset($_SESSION['message'])
+		                ?>
                     </form>
                 </div>
             </div>

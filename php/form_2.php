@@ -17,7 +17,9 @@
         header("Location: ../order.php");
     }
     else{
-        echo "не получилось";
+        $_SESSION['message'] = 'Неправильно внесенные данные';
+		header('Location: ../index.php');
     }
+
 
 ?>
