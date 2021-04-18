@@ -17,9 +17,9 @@
     <br>
     <span>Город назначения:<?=$_SESSION['value_2']?></span>
     <br>
-    <span>объем груза:<?=$_SESSION['value_3']?></span>
+    <span><?=$_SESSION['value_3']?></span>
     <br>
-    <span>Вес груза:<?=$_SESSION['value_4']?></span>
+    <span><?=$_SESSION['value_4']?></span>
     
 </body>
 </html>
