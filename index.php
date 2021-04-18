@@ -1,3 +1,8 @@
+<?php
+
+    session_start();
+
+?>
 <!DOCTYPE html>
 
 <head>
@@ -42,7 +47,7 @@
             </ul>
             <div class="forms">
                 <div class="forms-conter">
-                    <form action="#" id="form1">
+                    <form action="php/form_1.php" method="POST" id="form1">
                         <input type="text" name="city_1" placeholder="г.Владивосток">
                         <img class="forms-conter-arrow_right" src="img/icons/arrow_double.png">
                         <input type="text" name="city_2" placeholder="г.Москва">
@@ -61,7 +66,7 @@
                         <input type="text" name="V_gruz" placeholder="Объем, куб. м">
                         <input type="text" name="M_gruz" placeholder="Вес, кг">
                         <br>
-                        <button id="btn2" type="button">Расчитать и заказать</button>
+                        <button id="btn2" type="submit">Расчитать и заказать</button>
                     </form>
                 </div>
             </div>
@@ -81,48 +86,7 @@
         </div>
         </div>
     </div>
-    <script>
-
-        const form1 = document.getElementById('form1');
-
-        function retrieveFormValue(event){
-
-            event.preventDefault();
-
-            const name = form1.querySelector('[name="name"]'),
-                city_out = form1.querySelector('[name="city_1"]'),
-                city_in = form1.querySelector('[name="city_2"]'),
-                cont = form1.querySelector('[name="cont_type"]');
-
-            const values = {
-                name: name.value,
-                city_out: city_out.value,
-                city_in: city_in.value,
-                cont: cont.value
-            };
-
-            console.log(values);
-
-        }
-
-        form1.addEventListener('submit', retrieveFormValue);
-       
-
-    </script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script>
-        var button = document.getElementById('btn');
-        var button1 = document.getElementById('btn2');
-        button.addEventListener('click', function(){
-            swal("Первая кнопка нажата", "Ураааааааааа")
-        });
-        button1.addEventListener('click', function(){
-            swal("Вторая кнока нажата", "Ураааааааааа еще раз")
-        });
-    </script>
-    <script src="script/script_calc.js"></script>
-    
-    
+    <script src="script/script_calc.js"></script>  
 </section>
 <section id="services" class="services">
     <div class="uslugi"></div>
