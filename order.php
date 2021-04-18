@@ -19,7 +19,14 @@
     <br>
     <span><?=$_SESSION['value_3']?></span>
     <br>
-    <span><?=$_SESSION['value_4']?></span>
+    <?php
+    if($_SESSION['value_4']==null){
+        echo '<span>',$_SESSION['value_4'],'</span>';
+    }
+    unset ($_SESSION['value_4']);
+    ?>
+    
+    
     
 </body>
 </html>
