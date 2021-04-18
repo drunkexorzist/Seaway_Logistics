@@ -13,10 +13,13 @@
 </head>
 <body>
     <h1>Страница заказа</h1>
-    <p><?=$_SESSION['value_1']?></p>
-    <p><?=$_SESSION['value_2']?></p>
-    <p><?=$_SESSION['value_3']?></p>
-    <p><?=$_SESSION['value_4']?></p>
+    <span>Город отправки:<?=$_SESSION['value_1']?></span>
+    <br>
+    <span>Город назначения:<?=$_SESSION['value_2']?></span>
+    <br>
+    <span>объем груза:<?=$_SESSION['value_3']?></span>
+    <br>
+    <span>Вес груза:<?=$_SESSION['value_4']?></span>
     
 </body>
 </html>
