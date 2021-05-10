@@ -44,7 +44,7 @@ body{
     margin: 0 auto;
     margin-bottom: 14px;
     margin-top: 13px;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     &-item{
         margin-left: 111px;
@@ -401,6 +401,46 @@ main{
         }
             
     }   
+}
+.reg{
+   max-height: 570px;
+   &-forms{
+       max-width: 500px;
+       display: flex;
+       flex-direction: column;
+       margin: 0 auto;
+       & h1{
+            font-size: 36px;
+            font-weight: 400;
+            color: $brown;
+       }
+       & input{
+           height: 50px;
+           margin-bottom: 50px;
+           background-color: $gray;
+           border: 0;
+           border-radius: 5px;
+           color: $brown;
+           & input::placeholder{
+               color: $brown;
+           }
+       }
+       & button{
+        height: 50px;
+        margin-bottom: 50px;
+        background-color: $dark_blue;
+        border: 0;
+        border-radius: 5px;
+        font-size: 18px;
+        color: white ;
+        transition: 0.2s;
+        font-weight: 300;
+        &:hover{
+            background-color: $gray;
+            color: $dark_blue;
+        }
+       }
+   }
 }
 .contac{
     height: 500px;

@@ -53,7 +53,7 @@ body {
   margin: 0 auto;
   margin-bottom: 14px;
   margin-top: 13px;
-  font-size: 20px;
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -439,6 +439,52 @@ main {
           font-size: 14px;
           color: #434343; }
 
+.reg {
+  max-height: 570px; }
+  .reg-forms {
+    max-width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto; }
+    .reg-forms h1 {
+      font-size: 36px;
+      font-weight: 400;
+      color: #434343; }
+    .reg-forms input {
+      height: 50px;
+      margin-bottom: 50px;
+      background-color: #CDCFE3;
+      border: 0;
+      border-radius: 5px;
+      color: #434343; }
+      .reg-forms input input::-webkit-input-placeholder {
+        color: #434343; }
+      .reg-forms input input:-ms-input-placeholder {
+        color: #434343; }
+      .reg-forms input input::-ms-input-placeholder {
+        color: #434343; }
+      .reg-forms input input::placeholder {
+        color: #434343; }
+    .reg-forms button {
+      height: 50px;
+      margin-bottom: 50px;
+      background-color: #152F70;
+      border: 0;
+      border-radius: 5px;
+      font-size: 18px;
+      color: white;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+      font-weight: 300; }
+      .reg-forms button:hover {
+        background-color: #CDCFE3;
+        color: #152F70; }
+
 .contac {
   height: 500px;
   margin-top: 18px;
@@ -677,5 +723,4 @@ main {
         font-weight: 300;
         font-size: 14px;
         line-height: 20px; }
-
 /*# sourceMappingURL=style.css.map */
