@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +38,11 @@
                     <input type="text" name="number" placeholder="Телефон">
                     <input type="password" name="password" placeholder="Пароль">
                     <button type="submit">Зарегистрироваться</button>
+                    <?php
+                        if ($_SESSION['msg']){
+                            die '<span class="reg-forms-msg">'
+                        }
+                    ?>
             </div>
         </form>
     </section>
