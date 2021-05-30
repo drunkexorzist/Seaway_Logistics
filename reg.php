@@ -40,8 +40,9 @@
                     <button type="submit">Зарегистрироваться</button>
                     <?php
                         if ($_SESSION['msg']){
-                            die '<span class="reg-forms-msg">'
+                            echo '<span class="reg-forms-msg">';
                         }
+                        unset($_SESSION['msg']);
                     ?>
             </div>
         </form>
