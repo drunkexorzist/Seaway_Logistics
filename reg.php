@@ -37,7 +37,7 @@
                     <input type="text" name="FIO" placeholder="ФИО">
                     <input type="text" name="number" placeholder="Телефон">
                     <input type="password" name="password" placeholder="Пароль">
-                    <button type="submit">Зарегистрироваться</button>
+                    <button type="submit">Авторизоваться</button>
                     <?php
                         if ($_SESSION['msg']){
                             echo '<span class="reg-forms-msg">';
